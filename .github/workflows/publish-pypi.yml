@@ -28,9 +28,12 @@ jobs:
 
       - name: Build sdist + wheel
         working-directory: packages/py
-        run: python -m build
+        run: |
+          cp ../../README.md README.md
+          python -m build
 
       - name: Publish to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
         with:
           packages-dir: packages/py/dist/
+          password: ${{ secrets.PYPI_REGISTRY_TOKEN }}
