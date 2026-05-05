@@ -25,9 +25,9 @@ classifiers = [
 requires-python = ">=3.9"
 
 [project.urls]
-Homepage = "https://github.com/dubzrn/glitch-badges"
-Repository = "https://github.com/dubzrn/glitch-badges"
-Issues = "https://github.com/dubzrn/glitch-badges/issues"
+Homepage = "https://github.com/VRIL-LABS/glitch-badges"
+Repository = "https://github.com/VRIL-LABS/glitch-badges"
+Issues = "https://github.com/VRIL-LABS/glitch-badges/issues"
 Organization = "https://github.com/VRIL-LABS"
 
 [project.scripts]
