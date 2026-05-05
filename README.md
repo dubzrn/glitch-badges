@@ -1,11 +1,17 @@
-# glitch-badges
+<div align="center">
+<img src="https://raw.githubusercontent.com/dubzrn/glitch-badges/main/.github/profile/assets/header.svg" width="900" alt="glitch-badges by VRIL LABS"/>
+</div>
 
-> **133 animated glitch badges** across 4 collections — VRIL LABS phosphor-seafoam palette, chromatic-aberration glitch animation, CRT scanlines, corner bracket decorators.  
-> All derived programmatically from a single `badge-glitch.svg` DNA.
+<div align="center">
 
 [![CI](https://github.com/dubzrn/glitch-badges/actions/workflows/ci.yml/badge.svg)](https://github.com/dubzrn/glitch-badges/actions/workflows/ci.yml)
 [![npm](https://img.shields.io/npm/v/glitch-badges?color=%231fe8a8&label=npm)](https://www.npmjs.com/package/glitch-badges)
 [![License: MIT](https://img.shields.io/badge/license-MIT-1fe8a8.svg)](LICENSE)
+
+</div>
+
+> **133 animated glitch badges** across 4 collections — VRIL LABS phosphor-seafoam palette, chromatic-aberration glitch animation, CRT scanlines, corner bracket decorators.  
+> All derived programmatically from a single `badge-glitch.svg` DNA.
 
 ---
 
@@ -47,6 +53,79 @@ Every badge inherits the exact same DNA:
 <!-- Wrap in a link -->
 [![Post-Quantum](https://raw.githubusercontent.com/dubzrn/glitch-badges/main/.github/profile/assets/badges/repo/security-pq.svg)](https://github.com/dubzrn/glitch-badges)
 ```
+
+---
+
+## Badge Gallery
+
+> Live preview — every badge rendered from `raw.githubusercontent.com`. Click any badge to copy its URL from the [catalog](#badge-catalog) below.
+
+<p align="center"><b>Social Media</b></p>
+<p align="center">
+<img src="https://raw.githubusercontent.com/dubzrn/glitch-badges/main/.github/profile/assets/badges/social/twitter.svg" width="200" height="34" alt="Twitter"/>&#160;
+<img src="https://raw.githubusercontent.com/dubzrn/glitch-badges/main/.github/profile/assets/badges/social/instagram.svg" width="190" height="52" alt="Instagram"/>&#160;
+<img src="https://raw.githubusercontent.com/dubzrn/glitch-badges/main/.github/profile/assets/badges/social/youtube.svg" width="180" height="52" alt="YouTube"/>&#160;
+<img src="https://raw.githubusercontent.com/dubzrn/glitch-badges/main/.github/profile/assets/badges/social/linkedin.svg" width="180" height="52" alt="LinkedIn"/>&#160;
+<img src="https://raw.githubusercontent.com/dubzrn/glitch-badges/main/.github/profile/assets/badges/social/bluesky.svg" width="170" height="52" alt="Bluesky"/>&#160;
+<img src="https://raw.githubusercontent.com/dubzrn/glitch-badges/main/.github/profile/assets/badges/social/mastodon.svg" width="180" height="52" alt="Mastodon"/>
+</p>
+<p align="center">
+<img src="https://raw.githubusercontent.com/dubzrn/glitch-badges/main/.github/profile/assets/badges/social/twitter-wide.svg" width="280" height="38" alt="Twitter Wide"/>&#160;
+<img src="https://raw.githubusercontent.com/dubzrn/glitch-badges/main/.github/profile/assets/badges/social/bluesky-wide.svg" width="280" height="38" alt="Bluesky Wide"/>&#160;
+<img src="https://raw.githubusercontent.com/dubzrn/glitch-badges/main/.github/profile/assets/badges/social/sponsor-wide.svg" width="280" height="38" alt="Sponsor Wide"/>
+</p>
+
+<p align="center"><b>Communications</b></p>
+<p align="center">
+<img src="https://raw.githubusercontent.com/dubzrn/glitch-badges/main/.github/profile/assets/badges/comms/discord.svg" width="180" height="52" alt="Discord"/>&#160;
+<img src="https://raw.githubusercontent.com/dubzrn/glitch-badges/main/.github/profile/assets/badges/comms/telegram.svg" width="185" height="52" alt="Telegram"/>&#160;
+<img src="https://raw.githubusercontent.com/dubzrn/glitch-badges/main/.github/profile/assets/badges/comms/signal.svg" width="220" height="34" alt="Signal"/>&#160;
+<img src="https://raw.githubusercontent.com/dubzrn/glitch-badges/main/.github/profile/assets/badges/comms/slack.svg" width="195" height="52" alt="Slack"/>
+</p>
+<p align="center">
+<img src="https://raw.githubusercontent.com/dubzrn/glitch-badges/main/.github/profile/assets/badges/comms/matrix.svg" width="180" height="52" alt="Matrix"/>&#160;
+<img src="https://raw.githubusercontent.com/dubzrn/glitch-badges/main/.github/profile/assets/badges/comms/email.svg" width="160" height="52" alt="Email"/>&#160;
+<img src="https://raw.githubusercontent.com/dubzrn/glitch-badges/main/.github/profile/assets/badges/comms/discord-wide.svg" width="310" height="38" alt="Discord Wide"/>
+</p>
+
+<p align="center"><b>Repository Status</b></p>
+<p align="center">
+<img src="https://raw.githubusercontent.com/dubzrn/glitch-badges/main/.github/profile/assets/badges/repo/status-stable.svg" width="220" height="34" alt="Stable"/>&#160;
+<img src="https://raw.githubusercontent.com/dubzrn/glitch-badges/main/.github/profile/assets/badges/repo/status-wip.svg" width="220" height="34" alt="WIP"/>&#160;
+<img src="https://raw.githubusercontent.com/dubzrn/glitch-badges/main/.github/profile/assets/badges/repo/build-passing.svg" width="220" height="34" alt="Build Passing"/>&#160;
+<img src="https://raw.githubusercontent.com/dubzrn/glitch-badges/main/.github/profile/assets/badges/repo/build-failing.svg" width="220" height="34" alt="Build Failing"/>
+</p>
+<p align="center">
+<img src="https://raw.githubusercontent.com/dubzrn/glitch-badges/main/.github/profile/assets/badges/repo/security-pq.svg" width="220" height="34" alt="Post-Quantum"/>&#160;
+<img src="https://raw.githubusercontent.com/dubzrn/glitch-badges/main/.github/profile/assets/badges/repo/security-encrypted.svg" width="220" height="34" alt="Encrypted"/>&#160;
+<img src="https://raw.githubusercontent.com/dubzrn/glitch-badges/main/.github/profile/assets/badges/repo/license-mit.svg" width="220" height="34" alt="MIT"/>&#160;
+<img src="https://raw.githubusercontent.com/dubzrn/glitch-badges/main/.github/profile/assets/badges/repo/contrib-welcome.svg" width="220" height="34" alt="PRs Welcome"/>
+</p>
+<p align="center">
+<img src="https://raw.githubusercontent.com/dubzrn/glitch-badges/main/.github/profile/assets/badges/repo/lang-python.svg" width="220" height="34" alt="Python"/>&#160;
+<img src="https://raw.githubusercontent.com/dubzrn/glitch-badges/main/.github/profile/assets/badges/repo/lang-rust.svg" width="220" height="34" alt="Rust"/>&#160;
+<img src="https://raw.githubusercontent.com/dubzrn/glitch-badges/main/.github/profile/assets/badges/repo/lang-nodejs.svg" width="220" height="34" alt="Node.js"/>&#160;
+<img src="https://raw.githubusercontent.com/dubzrn/glitch-badges/main/.github/profile/assets/badges/repo/lang-go.svg" width="220" height="34" alt="Go"/>
+</p>
+<p align="center">
+<img src="https://raw.githubusercontent.com/dubzrn/glitch-badges/main/.github/profile/assets/badges/repo/security-pq-wide.svg" width="290" height="34" alt="Post-Quantum Wide"/>&#160;
+<img src="https://raw.githubusercontent.com/dubzrn/glitch-badges/main/.github/profile/assets/badges/repo/status-stable-wide.svg" width="290" height="34" alt="Stable Wide"/>&#160;
+<img src="https://raw.githubusercontent.com/dubzrn/glitch-badges/main/.github/profile/assets/badges/repo/build-passing-wide.svg" width="290" height="34" alt="Build Passing Wide"/>
+</p>
+
+<p align="center"><b>Standalone Status</b></p>
+<p align="center">
+<img src="https://raw.githubusercontent.com/dubzrn/glitch-badges/main/.github/profile/assets/badges/status/pq-ready.svg" width="188" height="38" alt="PQ Ready"/>&#160;
+<img src="https://raw.githubusercontent.com/dubzrn/glitch-badges/main/.github/profile/assets/badges/status/status-passing.svg" width="155" height="38" alt="Passing"/>&#160;
+<img src="https://raw.githubusercontent.com/dubzrn/glitch-badges/main/.github/profile/assets/badges/status/status-stable.svg" width="148" height="38" alt="Stable"/>&#160;
+<img src="https://raw.githubusercontent.com/dubzrn/glitch-badges/main/.github/profile/assets/badges/status/open-source.svg" width="172" height="38" alt="Open Source"/>
+</p>
+<p align="center">
+<img src="https://raw.githubusercontent.com/dubzrn/glitch-badges/main/.github/profile/assets/badges/status/contributing.svg" width="182" height="38" alt="Contributing"/>&#160;
+<img src="https://raw.githubusercontent.com/dubzrn/glitch-badges/main/.github/profile/assets/badges/status/security.svg" width="158" height="38" alt="Security"/>&#160;
+<img src="https://raw.githubusercontent.com/dubzrn/glitch-badges/main/.github/profile/assets/badges/status/downloads.svg" width="155" height="38" alt="Downloads"/>&#160;
+<img src="https://raw.githubusercontent.com/dubzrn/glitch-badges/main/.github/profile/assets/badges/status/coverage.svg" width="178" height="38" alt="Coverage"/>
+</p>
 
 ---
 

@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="200" viewBox="0 0 900 200">
+<foreignObject width="100%" height="100%">
+<div xmlns="http://www.w3.org/1999/xhtml">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+.hdr{width:900px;height:200px;background:#0b0c0b;border:1px solid #1a2a24;border-radius:6px;
+  position:relative;overflow:hidden;display:flex;align-items:stretch;
+  font-family:ui-monospace,'SF Mono','Fira Mono',Consolas,monospace;}
+/* top accent seam */
+.hdr::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;
+  background:linear-gradient(90deg,transparent 5%,#1fe8a840 30%,#1fe8a8 50%,#1fe8a840 70%,transparent 95%);
+  animation:seam 3.5s ease-in-out infinite;z-index:30;}
+@keyframes seam{0%,100%{opacity:.55}50%{opacity:1}}
+/* bottom dim seam */
+.hdr::after{content:'';position:absolute;bottom:0;left:0;right:0;height:1px;
+  background:linear-gradient(90deg,transparent,#1a2a24 30%,#1a2a2460 50%,#1a2a24 70%,transparent);}
+/* CRT scanlines */
+.scan{position:absolute;inset:0;pointer-events:none;z-index:20;
+  background:repeating-linear-gradient(0deg,transparent,transparent 3px,rgba(31,232,168,0.018) 3px,rgba(31,232,168,0.018) 4px);
+  animation:fl 7s steps(1) infinite;}
+@keyframes fl{0%,87%,100%{opacity:1}88%{opacity:.45}89%{opacity:1}92%{opacity:.65}93%{opacity:1}96%{opacity:.8}97%{opacity:1}}
+/* sweeping horizontal beam */
+.beam{position:absolute;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,#1fe8a820,#1fe8a860,#1fe8a820,transparent);
+  top:0;z-index:25;animation:sweep 8s cubic-bezier(0.4,0,0.6,1) infinite;}
+@keyframes sweep{0%{top:-2px;opacity:0}10%{opacity:1}90%{opacity:.6}100%{top:202px;opacity:0}}
+/* corner brackets */
+.br{position:absolute;width:14px;height:14px;border-color:#1fe8a8;border-style:solid;opacity:.5;z-index:30;}
+.br-tl{top:10px;left:10px;border-width:1.5px 0 0 1.5px;}
+.br-tr{top:10px;right:10px;border-width:1.5px 1.5px 0 0;}
+.br-bl{bottom:10px;left:10px;border-width:0 0 1.5px 1.5px;}
+.br-br{bottom:10px;right:10px;border-width:0 1.5px 1.5px 0;}
+/* subtle dot grid */
+.grid{position:absolute;inset:0;z-index:1;
+  background-image:radial-gradient(circle,#1fe8a808 1px,transparent 1px);
+  background-size:20px 20px;}
+/* main left content */
+.main{flex:1;padding:32px 36px 28px;display:flex;flex-direction:column;justify-content:space-between;position:relative;z-index:10;}
+/* title text with chromatic aberration glitch */
+.title{font-size:56px;font-weight:900;letter-spacing:0.1em;text-transform:uppercase;
+  color:#1fe8a8;position:relative;user-select:none;line-height:1;display:inline-block;
+  animation:gtm 9s steps(1) infinite;}
+.title::before,.title::after{content:'GLITCH-BADGES';position:absolute;top:0;left:0;width:100%;height:100%;opacity:0;pointer-events:none;}
+.title::before{color:#ff3366;mix-blend-mode:screen;animation:gtr 9s steps(1) infinite;}
+.title::after{color:#33ffee;mix-blend-mode:screen;animation:gtc 9s steps(1) infinite;}
+@keyframes gtm{
+  0%,83%,100%{transform:none;opacity:1;filter:none}
+  84%{transform:skewX(-2.5deg) translateX(5px) scaleY(.98);opacity:.82;filter:blur(.4px)}
+  85%{transform:none;opacity:1;filter:none}
+  87%{transform:skewX(1.2deg) translateX(-3px);opacity:.88;filter:none}
+  88%{transform:none;opacity:1;filter:none}
+  91%{transform:translateX(4px) scaleX(1.003) skewX(-.8deg);opacity:.85;filter:blur(.25px)}
+  92%{transform:none;opacity:1;filter:none}
+  95%{transform:skewX(.6deg) translateX(2px) scaleY(.99);opacity:.9;filter:none}
+  96%{transform:none;opacity:1;filter:none}}
+@keyframes gtr{
+  0%,83%,100%{transform:translateX(0);opacity:0}
+  84%{transform:translateX(-7px);opacity:.78}85%{opacity:0}
+  87%{transform:translateX(4px);opacity:.6}88%{opacity:0}
+  91%{transform:translateX(-5px);opacity:.68}92%{opacity:0}
+  95%{transform:translateX(-3px);opacity:.62}96%{opacity:0}}
+@keyframes gtc{
+  0%,83%,100%{transform:translateX(0);opacity:0}
+  84%{transform:translateX(7px);opacity:.68}85%{opacity:0}
+  87%{transform:translateX(-4px);opacity:.55}88%{opacity:0}
+  91%{transform:translateX(5px);opacity:.62}92%{opacity:0}
+  95%{transform:translateX(3px);opacity:.58}96%{opacity:0}}
+/* version + studio row */
+.meta{display:flex;align-items:center;gap:10px;margin-top:12px;}
+.vtag{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:#4a7060;
+  border:1px solid #1a2a24;padding:3px 9px;border-radius:2px;background:#0b0c0b;}
+.vnum{font-size:12px;letter-spacing:.18em;color:#1fe8a870;font-weight:700;}
+.dot{color:#1a2a24;font-size:10px;}
+.studio{font-size:9px;letter-spacing:.3em;text-transform:uppercase;color:#1fe8a840;font-weight:700;}
+/* collection tags at bottom */
+.coll{display:flex;gap:5px;align-items:center;}
+.ctag{font-size:8px;letter-spacing:.22em;text-transform:uppercase;color:#1fe8a855;
+  border:1px solid #1fe8a815;padding:3px 9px;border-radius:2px;}
+.csep{font-size:8px;color:#1a2a24;}
+/* divider */
+.divider{width:1px;background:linear-gradient(180deg,transparent 5%,#1a2a24 30%,#1fe8a820 50%,#1a2a24 70%,transparent 95%);
+  margin:0;align-self:stretch;}
+/* right stats panel */
+.panel{width:230px;padding:28px 28px;display:flex;flex-direction:column;justify-content:center;
+  gap:18px;position:relative;z-index:10;}
+/* inner vertical seam on panel edge */
+.panel::before{content:'';position:absolute;left:0;top:15%;bottom:15%;width:1px;
+  background:linear-gradient(180deg,transparent,#1fe8a825,transparent);}
+.stat{display:flex;flex-direction:column;gap:4px;}
+.stat-num{font-size:34px;font-weight:900;letter-spacing:.04em;color:#1fe8a8;line-height:1;
+  animation:stn 9s steps(1) infinite;}
+@keyframes stn{0%,83%,100%{opacity:1}84%{opacity:.6}85%{opacity:1}91%{opacity:.75}92%{opacity:1}}
+.stat-lbl{font-size:8px;letter-spacing:.24em;text-transform:uppercase;color:#4a7060;line-height:1.4;}
+.hdiv{height:1px;background:linear-gradient(90deg,#1a2a24,#1fe8a820,#1a2a24);}
+/* attribution block */
+.attr{display:flex;flex-direction:column;gap:3px;}
+.attr-by{font-size:7px;letter-spacing:.28em;text-transform:uppercase;color:#2a3a34;}
+.attr-name{font-size:14px;font-weight:700;letter-spacing:.32em;text-transform:uppercase;
+  color:#1fe8a8;opacity:.45;animation:atn 9s steps(1) infinite;}
+@keyframes atn{0%,83%,100%{opacity:.45}84%{opacity:.85;color:#1fe8a8}85%{opacity:.45}91%{opacity:.65}92%{opacity:.45}}
+</style>
+<div class="hdr">
+  <div class="grid"></div>
+  <div class="scan"></div>
+  <div class="beam"></div>
+  <div class="br br-tl"></div><div class="br br-tr"></div>
+  <div class="br br-bl"></div><div class="br br-br"></div>
+  <div class="main">
+    <div>
+      <div class="title">GLITCH-BADGES</div>
+      <div class="meta">
+        <span class="vtag">VRIL LABS</span>
+        <span class="vnum">v1.0.0</span>
+        <span class="dot">·</span>
+        <span class="studio">133 ANIMATED BADGES · 4 COLLECTIONS</span>
+      </div>
+    </div>
+    <div class="coll">
+      <span class="ctag">SOCIAL</span>
+      <span class="csep">·</span>
+      <span class="ctag">COMMS</span>
+      <span class="csep">·</span>
+      <span class="ctag">REPO</span>
+      <span class="csep">·</span>
+      <span class="ctag">STATUS</span>
+    </div>
+  </div>
+  <div class="divider"></div>
+  <div class="panel">
+    <div class="stat">
+      <div class="stat-num">133</div>
+      <div class="stat-lbl">ANIMATED BADGES</div>
+    </div>
+    <div class="hdiv"></div>
+    <div class="stat">
+      <div class="stat-num">4</div>
+      <div class="stat-lbl">COLLECTIONS</div>
+    </div>
+    <div class="hdiv"></div>
+    <div class="attr">
+      <div class="attr-by">BY</div>
+      <div class="attr-name">VRIL LABS</div>
+    </div>
+  </div>
+</div>
+</div>
+</foreignObject>
+</svg>
