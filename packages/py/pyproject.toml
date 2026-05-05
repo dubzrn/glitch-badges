@@ -6,7 +6,7 @@ build-backend = "setuptools.backends.legacy:build"
 name = "glitch-badges"
 version = "1.0.0"
 description = "133 animated glitch badges — VRIL LABS phosphor-seafoam palette, chromatic-aberration, CRT scanlines. Python SDK + CLI."
-readme = "README.md"
+readme = "../../README.md"
 license = { text = "MIT" }
 authors = [{ name = "VRIL LABS" }]
 keywords = ["badges", "glitch", "animated", "svg", "github", "readme", "crt", "vril-labs"]
